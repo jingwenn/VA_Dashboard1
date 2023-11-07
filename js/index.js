@@ -10,7 +10,7 @@ function init() {
 
 
 function fetchData() {
-    d3.csv("../data/output.csv")
+    d3.csv("data/output.csv")
         .then(function (data) {
             console.log('Data loaded successfully.');
 
