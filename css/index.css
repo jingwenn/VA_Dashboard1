@@ -1,0 +1,190 @@
+* {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 { 
+    text-align: center;
+  }
+  
+  .chart{
+    font-size: 10px;
+    text-align: right;
+    color: white;
+    margin-left: 800px;
+  }
+
+
+  .column {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+#timeseries {
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  background-color: black;
+  padding: 10px;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 5px;
+  fill-opacity: 100;
+  font-family: "Robot Mono", sans-serif;
+  color: whitesmoke;
+  padding: 1rem;
+  font-size: 15px;
+  z-index: 100;
+  visibility: hidden;
+}
+
+/* #Filter {
+  display: flex;
+  justify-content: flex-end; 
+  padding: 20px;
+} */
+
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px; */
+}
+
+.row1 > div {
+  margin: 10px;
+  padding: 10px 20px; 
+  flex: 1;
+  text-align: center;
+  background-color: white;
+}
+
+.row1 > div > div {
+  background-color: white;
+}
+
+.row1 .title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #999b9e;
+}
+
+.row1 .totalRecords,
+.row1 .numExporters,
+.row1 .numImporters,
+.row1 .balance {
+  border: 1px solid #d9dcde;
+  border-radius: 5px;
+}
+
+.row1 .value {
+  font-weight: bold;
+  font-size: 35px;
+  color: #393a3b;
+}
+
+svg {
+  background-color: white;
+}
+
+.column {
+  background-color: white;
+  border: 1px solid #d9dcde;
+  border-radius: 5px;
+  flex: 1;
+  margin: 10px;
+}
+
+.row2 {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.column#timeseries {
+  margin-left: 10px !important; 
+}
+
+.column#chart {
+  margin-left: 10px !important;
+}
+
+.column#chart2sum {
+  margin-right: 10px !important;
+}
+
+.row3 {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 5px !important;
+}
+
+
+.row4 {
+  display: flex; 
+  justify-content: space-between;
+  margin-top: 10px !important;
+}
+
+
+
+.my-button {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: grey;
+  text-align: center;
+  /* line-height: 30px; */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #0077b6; 
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start;  */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  width: 350px;
+  max-height: 200px;
+  overflow: auto;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.my-button:hover .tooltip {
+  visibility: visible;
+}
+
+
+
